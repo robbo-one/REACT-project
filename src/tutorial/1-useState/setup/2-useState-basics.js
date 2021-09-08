@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
 
+// things that relate to all useState hooks
+// They all begin with a use , useState , useCallback etc. etc.
+// component name must be Uppercase
+// the hook must be in the function/component body it needs to be invoked inside the function body
+// you cannot call the hook conditionally
+
 const UseStateBasics = () => {
   // console.log(useState('hello world'))
   // const value = useState(1)[0]
