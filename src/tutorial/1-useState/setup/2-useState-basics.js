@@ -8,14 +8,20 @@ const UseStateBasics = () => {
   const [text, setText] = useState('random title') //you can name this anything for example;[poop, setPoop], and the initial state could be anything also ex. = useState('poop')
 
   const handleClick = () => {
-    setText('hello world')
+    if (text === 'random title') {
+      setText('helloworld')
+    } else {
+      setText('random title')
+    }
   }
-  return <React.Fragment>
-    <h1>{text}</h1>
-    <button className="btn" onClick={handleClick}>
-      change title
-    </button>
+  return (
+    <React.Fragment>
+      <h1>{text}</h1>
+      <button className='btn' onClick={handleClick}>
+        change title
+      </button>
     </React.Fragment>
+  )
 }
 
 export default UseStateBasics
